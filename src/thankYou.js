@@ -1,3 +1,8 @@
 import React from "react";
+import "./styles/thankyou.css";
 
-export default props => <h1>Thank You</h1>;
+export default props => (
+  <a href="https://www.youtube.com/watch?v=QKYd5ffFG10">
+    Click Here For Our Gratitude
+  </a>
+);
