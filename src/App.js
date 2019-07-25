@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Form from "./components/form";
+import validator from "validator";
+import "normalize.css/normalize.css";
+import "./App.css";
+import MaterialIcon from "material-icons-react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React {
+  state = {};
+
+  handleChange = e => {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+
+  handleSubmit = e => {};
+
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label htmlFor="username">Username</label>
+        <input type="text" id="username" name="username" />
+
+        <label htmlFor="email">Username</label>
+        <input type="email" id="email" name="email" />
+
+        <label htmlFor="password">Password</label>
+        <input type="password" id="password" name="password" />
+
+        <label htmlFor="confirm">Confirm Password</label>
+        <input type="password" id="confirm" name="confirm" />
+      </form>
+    );
+  }
 }
+export default App;
 
 export default App;
