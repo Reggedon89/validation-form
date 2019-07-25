@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.error {
+  color: red;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background: #eee;
+  border-radius: 10px;
+
+}
+
+.register h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 3px 0px 3px 0px;
+}
+
+.register label {
+  margin-top: 20px;
+}
+
+.register input {
+  border: none;
+  background: transparent;
+  outline: none;
+  display: block;
+  width: 100%;
+}
+
+.register .input {
+  background: white;
+  display: flex;
+
+}
+
+.register button {
+  margin-top: 10px;
+  color: black;
+}
+
+.register .err,
+.register .err.input i {
+  color: red;
+}
