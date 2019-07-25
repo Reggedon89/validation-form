@@ -73,6 +73,12 @@ class Form extends React.Component {
         nameError: "",
         nameClass: ""
       });
+
+      // thank you page
+
+      if (!error) {
+        this.props.history.push("/thankyou");
+      }
     }
 
     //validator for password
